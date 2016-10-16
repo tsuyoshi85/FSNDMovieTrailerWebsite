@@ -1,6 +1,7 @@
 import fresh_tomatoes
 import media
 
+# Instances of Movie
 toy_story = media.Movie("Toy Story",
 						"A story of a boy and hist toys come to life",
 						"https://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg", # NQDA
@@ -31,5 +32,8 @@ basic = media.Movie("Basic",
 					"https://images-na.ssl-images-amazon.com/images/M/MV5BYzRiMTBlZDktODkwZi00MWU2LTkyMGQtODBiYjRlNDRmMWJlXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_SY1000_CR0,0,690,1000_AL_.jpg", # NQDA
 					"https://youtu.be/BiCIXD5biYI")
 
+# List of movies
 movies = [toy_story, avatar, seven_samurai, independence_day, school_of_rock, basic]
+
+# This function generate html file
 fresh_tomatoes.open_movies_page(movies)
